@@ -1,6 +1,6 @@
 # That Build Library
 
-
+[Code Coverage Report](https://htmlpreview.github.io/?https://github.com/ThatDevCompany/that-build-library/blob/master/coverage/index.html)
 
 ##  Overview
 At That Dev Company we create and manage a whole bunch of projects

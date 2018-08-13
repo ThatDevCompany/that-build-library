@@ -8,17 +8,17 @@ import { exec } from './exec'
  */
 export async function npmPublish(
 	fld: string,
-	processPackage: (pkg) => void = pkg => {}
+	process: (pkg) => void = pkg => {}
 ) {
 	// Update the package.json
 	await processPackage((pkg: any) => {
 		// Process the contents
-		processPackage(pkg)
+		process(pkg)
 		delete pkg.devDependencies
 
 		// Save package.json
 		fs.writeFileSync(fld + '/package.json', JSON.stringify(pkg, null, 4))
-	})
+	}, true)
 
 	// Delete the tests
 	await clean(fld + '/*.spec.*')

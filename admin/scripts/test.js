@@ -13,7 +13,7 @@ export default Promise.resolve()
 			'--reporter', 'lcov',
 			'--all', 'true',
 			'--check-coverage',
-			'--lines', '1',
+			'--lines', '10',
 			'--per-file',
 			'--report-dir', './coverage',
 			'--temp-directory', './coverage/tmp',

@@ -1,4 +1,4 @@
-import { BuildUtils } from '../../src/build'
+import { BuildUtils } from '../../src'
 import Lint from './lint'
 import Test from './test'
 import Build from './build'
