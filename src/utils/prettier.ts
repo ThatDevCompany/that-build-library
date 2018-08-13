@@ -29,7 +29,7 @@ export async function prettierTS(
 	include: string = 'src',
 	exclude: Array<string> = []
 ) {
-	exec('prettier', [
+	return exec('prettier', [
 		'--single-quote',
 		'--use-tabs',
 		'--write',
@@ -52,7 +52,7 @@ export async function prettierJS(
 	include: string = 'src',
 	exclude: Array<string> = []
 ) {
-	exec('prettier', [
+	return exec('prettier', [
 		'--single-quote',
 		'--use-tabs',
 		'--write',

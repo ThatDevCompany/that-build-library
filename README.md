@@ -82,6 +82,12 @@ Automatically flattens typescript module paths
 * **moduleName** the name of the path module to remove
 * **folder** the actual path of the module
 
+#### test (minimum_coverage, include, excludes)
+Compile the codebase (in accordance to the typescript config)
+* **minimum_coverage** the minimum coverage threshold for each file (0 to 100)
+* **include** the path to the root directory (default "src")
+* **excludes** an array of paths to be excluded (default [])
+
 #### tsc (config)
 Compile the codebase (in accordance to the typescript config)
 * **config** the path to the tsconfig file

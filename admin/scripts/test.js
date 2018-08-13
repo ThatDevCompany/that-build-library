@@ -5,23 +5,6 @@ export default Promise.resolve()
 	.then(() => BuildUtils.tsc('tsconfig.json'))
 
 	.then(() => BuildUtils.echo('RUNNING TESTS'))
-	.then(() =>
-		// prettier-ignore
-		BuildUtils.exec('nyc', [
-			'--reporter', 'html',
-			'--reporter', 'text',
-			'--reporter', 'lcov',
-			'--all', 'true',
-			'--check-coverage',
-			'--lines', '10',
-			'--per-file',
-			'--report-dir', './coverage',
-			'--temp-directory', './coverage/tmp',
-			'--exclude', 'src/**/*.spec.*',
-			'--exclude', 'src/**/index.js',
-			'--include', 'src/**/*',
-			'node_modules/.bin/jasmine',
-			'src/*.spec.js',
-			'src/**/*.spec.js'
-		])
-	)
+	.then(() => BuildUtils.test(10, 'src', ['src/index.js']))
+
+	.catch(console.error)
