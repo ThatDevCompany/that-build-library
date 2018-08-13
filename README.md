@@ -31,5 +31,61 @@ Promise.resolve()
     .catch(console.error)
 ```
 
+## Utilities
+The following utility functions are available:-
 
+#### clean (folder, leaveRoot)
+Removes the contents of a folder
+* **folder** the folder to be cleaned
+* **leaveRoot** (optional) should the folder be left untouched (just the contents removed)
+
+#### copy (source, destination, filename)
+Copies a file or a folder
+* **source** the folder or file to be copied
+* **destination** the folder to be created/copied into
+* **filename** (optional) the filename of the new file (defaults to the name of the source file)
+
+#### echo (message)
+Logs a message to screen
+* **message** the message to be logged
+
+#### exec (cmd, parameters)
+Executes a command line program
+* **cmd** the command to be run
+* **parameters** a list of parameters to be passed
+
+#### npmPublish (folder, packageProcessor)
+Updates the version and publishes the project to NPM
+* **folder** the folder containing the distributable build
+* **packageProcessor** a function that will tidy up the package.json
+
+#### prettierJS (include, excludes)
+Automatically tidies the code (for JAVASCRIPT code)
+* **include** the root folder prettify
+* **excludes** an array of folders to exclude
+
+#### prettierTS (include, excludes)
+Automatically tidies the code (for TYPESCRIPT code)
+* **include** the root folder prettify
+* **excludes** an array of folders to exclude
+
+#### processPackage (callback, autoUpdate)
+Load the package.json file
+* **callback** a function which will receive the package.json
+file's contents
+* **autoUpdate** should the version of the package.json be automatically updated and saved
+
+#### removeModuleAlias (moduleName, folder)
+Automatically flattens typescript module paths
+* **moduleName** the name of the path module to remove
+* **folder** the actual path of the module
+
+#### tsc (config)
+Compile the codebase (in accordance to the typescript config)
+* **config** the path to the tsconfig file
+
+#### zip (from, to)
+Create a zip of the build
+* **from** the build path
+* **to** the path to the zip file being produced
 

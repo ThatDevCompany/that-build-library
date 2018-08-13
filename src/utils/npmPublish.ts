@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import { updatePackage } from './updatePackage'
+import { processPackage } from './updatePackage'
 import { clean } from './clean'
 import { exec } from './exec'
 
@@ -12,7 +12,7 @@ export async function npmPublish(
 ) {
 	// Update the package.json
 	return (
-		updatePackage((pkg: any) => {
+		processPackage((pkg: any) => {
 			// Process the contents
 			processPackage(pkg)
 			delete pkg.devDependencies

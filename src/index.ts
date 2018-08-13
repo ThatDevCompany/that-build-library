@@ -6,7 +6,7 @@ import { npmPublish } from './utils/npmPublish'
 import { prettierJS, prettierTS } from './utils/prettier'
 import { removeModuleAlias } from './utils/removeModuleAlias'
 import { tsc } from './utils/tsc'
-import { updatePackage } from './utils/updatePackage'
+import { processPackage } from './utils/processPackage'
 import { zip } from './utils/zip'
 
 export const BuildUtils = {
@@ -19,6 +19,6 @@ export const BuildUtils = {
 	prettierTS: prettierTS,
 	removeModuleAlias: removeModuleAlias,
 	tsc: tsc,
-	updatePackage: updatePackage,
+	processPackage: processPackage,
 	zip: zip
 }
