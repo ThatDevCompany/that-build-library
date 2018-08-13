@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for private.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> private.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/32</span>
+      </div>
+    </div>
+    <p class="quiet">
+      Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+    </p>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+<span class="cstat-no" title="statement not covered" >Object.defineProperty(exports, "__esModule", { value: true });</span>
+/**
+ * PRIVATE Zip Folder
+ */
+function <span class="fstat-no" title="function not covered" >zipFolder(</span>zip, ffs, root, dir) {
+<span class="cstat-no" title="statement not covered" >    dir = dir || '';</span>
+    let files = <span class="cstat-no" title="statement not covered" >ffs.readdirSync(root + (dir ? '/' + dir : ''));</span>
+<span class="cstat-no" title="statement not covered" >    files.forEach(<span class="fstat-no" title="function not covered" >fi</span>le =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        if (['.ts', '.js.map'].some(<span class="fstat-no" title="function not covered" >e </span>=&gt; <span class="cstat-no" title="statement not covered" >file.endsWith(e))</span>) {</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+        }
+        let stat = <span class="cstat-no" title="statement not covered" >ffs.statSync(root + (dir ? '/' + dir : '') + '/' + file);</span>
+<span class="cstat-no" title="statement not covered" >        if (stat.isFile()) {</span>
+<span class="cstat-no" title="statement not covered" >            zipFile(zip, ffs, root, dir, file);</span>
+        }
+        else <span class="cstat-no" title="statement not covered" >if (stat.isDirectory()) {</span>
+<span class="cstat-no" title="statement not covered" >            zipFolder(zip, ffs, root, dir ? dir + '/' + file : file);</span>
+        }
+    });
+}
+<span class="cstat-no" title="statement not covered" >exports.zipFolder = zipFolder;</span>
+/**
+ * PRIVATE Zip File
+ */
+function <span class="fstat-no" title="function not covered" >zipFile(</span>zip, ffs, root, dir, file) {
+<span class="cstat-no" title="statement not covered" >    dir = dir || '';</span>
+    let zipfolder = <span class="cstat-no" title="statement not covered" >dir ? zip.folder(dir) : zip;</span>
+    const data = <span class="cstat-no" title="statement not covered" >ffs.readFileSync(root + (dir ? '/' + dir : '') + '/' + file);</span>
+<span class="cstat-no" title="statement not covered" >    zipfolder.file(file, data);</span>
+}
+<span class="cstat-no" title="statement not covered" >exports.zipFile = zipFile;</span>
+/**
+ * PRIVATE Check Folder
+ */
+function <span class="fstat-no" title="function not covered" >checkFolder(</span>ffs, fld) {
+    let fldBits = <span class="cstat-no" title="statement not covered" >fld.split('/'),</span> mkfld = <span class="cstat-no" title="statement not covered" >'';</span>
+<span class="cstat-no" title="statement not covered" >    fldBits.forEach(<span class="fstat-no" title="function not covered" >to</span>Bit =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        mkfld = mkfld ? mkfld + '/' + toBit : toBit;</span>
+<span class="cstat-no" title="statement not covered" >        if (mkfld &amp;&amp; !ffs.existsSync(mkfld)) {</span>
+<span class="cstat-no" title="statement not covered" >            ffs.mkdirSync(mkfld);</span>
+        }
+    });
+}
+<span class="cstat-no" title="statement not covered" >exports.checkFolder = checkFolder;</span>
+/**
+ * PRIVATE Copy Folder
+ */
+function <span class="fstat-no" title="function not covered" >copyFolder(</span>ffs, from, to) {
+<span class="cstat-no" title="statement not covered" >    checkFolder(ffs, to);</span>
+    let tasks = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >    ffs.readdirSync(from).forEach(<span class="fstat-no" title="function not covered" >ch</span>ild =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        if (ffs.statSync(from + '/' + child).isDirectory()) {</span>
+<span class="cstat-no" title="statement not covered" >            copyFolder(ffs, from + '/' + child, to + '/' + child);</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            copyFile(ffs, from + '/' + child, to + '/' + child);</span>
+        }
+    });
+}
+<span class="cstat-no" title="statement not covered" >exports.copyFolder = copyFolder;</span>
+/**
+ * PRIVATE COPY File
+ */
+function <span class="fstat-no" title="function not covered" >copyFile(</span>ffs, from, to) {
+<span class="cstat-no" title="statement not covered" >    ffs.writeFileSync(to, ffs.readFileSync(from).toString());</span>
+}
+<span class="cstat-no" title="statement not covered" >exports.copyFile = copyFile;</span>
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJpdmF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInByaXZhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7R0FFRztBQUNILG1CQUEwQixHQUFRLEVBQUUsR0FBUSxFQUFFLElBQVksRUFBRSxHQUFXO0lBQ3RFLEdBQUcsR0FBRyxHQUFHLElBQUksRUFBRSxDQUFBO0lBQ2YsSUFBSSxLQUFLLEdBQUcsR0FBRyxDQUFDLFdBQVcsQ0FBQyxJQUFJLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsR0FBRyxHQUFHLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUE7SUFDMUQsS0FBSyxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsRUFBRTtRQUNwQixJQUFJLENBQUMsS0FBSyxFQUFFLFNBQVMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRTtZQUNuRCxPQUFNO1NBQ047UUFDRCxJQUFJLElBQUksR0FBRyxHQUFHLENBQUMsUUFBUSxDQUFDLElBQUksR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsR0FBRyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDLEdBQUcsR0FBRyxHQUFHLElBQUksQ0FBQyxDQUFBO1FBQ25FLElBQUksSUFBSSxDQUFDLE1BQU0sRUFBRSxFQUFFO1lBQ2xCLE9BQU8sQ0FBQyxHQUFHLEVBQUUsR0FBRyxFQUFFLElBQUksRUFBRSxHQUFHLEVBQUUsSUFBSSxDQUFDLENBQUE7U0FDbEM7YUFBTSxJQUFJLElBQUksQ0FBQyxXQUFXLEVBQUUsRUFBRTtZQUM5QixTQUFTLENBQUMsR0FBRyxFQUFFLEdBQUcsRUFBRSxJQUFJLEVBQUUsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLEdBQUcsR0FBRyxHQUFHLElBQUksQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUE7U0FDeEQ7SUFDRixDQUFDLENBQUMsQ0FBQTtBQUNILENBQUM7QUFkRCw4QkFjQztBQUVEOztHQUVHO0FBQ0gsaUJBQ0MsR0FBUSxFQUNSLEdBQVEsRUFDUixJQUFZLEVBQ1osR0FBVyxFQUNYLElBQVk7SUFFWixHQUFHLEdBQUcsR0FBRyxJQUFJLEVBQUUsQ0FBQTtJQUNmLElBQUksU0FBUyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFBO0lBQzNDLE1BQU0sSUFBSSxHQUFHLEdBQUcsQ0FBQyxZQUFZLENBQUMsSUFBSSxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsR0FBRyxHQUFHLEdBQUcsSUFBSSxDQUFDLENBQUE7SUFDekUsU0FBUyxDQUFDLElBQUksQ0FBQyxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUE7QUFDM0IsQ0FBQztBQVhELDBCQVdDO0FBRUQ7O0dBRUc7QUFDSCxxQkFBNEIsR0FBUSxFQUFFLEdBQVc7SUFDaEQsSUFBSSxPQUFPLEdBQUcsR0FBRyxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsRUFDM0IsS0FBSyxHQUFHLEVBQUUsQ0FBQTtJQUNYLE9BQU8sQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7UUFDdkIsS0FBSyxHQUFHLEtBQUssQ0FBQyxDQUFDLENBQUMsS0FBSyxHQUFHLEdBQUcsR0FBRyxLQUFLLENBQUMsQ0FBQyxDQUFDLEtBQUssQ0FBQTtRQUMzQyxJQUFJLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsS0FBSyxDQUFDLEVBQUU7WUFDcEMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQTtTQUNwQjtJQUNGLENBQUMsQ0FBQyxDQUFBO0FBQ0gsQ0FBQztBQVRELGtDQVNDO0FBRUQ7O0dBRUc7QUFDSCxvQkFBMkIsR0FBUSxFQUFFLElBQVksRUFBRSxFQUFVO0lBQzVELFdBQVcsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLENBQUE7SUFDcEIsSUFBSSxLQUFLLEdBQUcsRUFBRSxDQUFBO0lBQ2QsR0FBRyxDQUFDLFdBQVcsQ0FBQyxJQUFJLENBQUMsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7UUFDckMsSUFBSSxHQUFHLENBQUMsUUFBUSxDQUFDLElBQUksR0FBRyxHQUFHLEdBQUcsS0FBSyxDQUFDLENBQUMsV0FBVyxFQUFFLEVBQUU7WUFDbkQsVUFBVSxDQUFDLEdBQUcsRUFBRSxJQUFJLEdBQUcsR0FBRyxHQUFHLEtBQUssRUFBRSxFQUFFLEdBQUcsR0FBRyxHQUFHLEtBQUssQ0FBQyxDQUFBO1NBQ3JEO2FBQU07WUFDTixRQUFRLENBQUMsR0FBRyxFQUFFLElBQUksR0FBRyxHQUFHLEdBQUcsS0FBSyxFQUFFLEVBQUUsR0FBRyxHQUFHLEdBQUcsS0FBSyxDQUFDLENBQUE7U0FDbkQ7SUFDRixDQUFDLENBQUMsQ0FBQTtBQUNILENBQUM7QUFWRCxnQ0FVQztBQUVEOztHQUVHO0FBQ0gsa0JBQXlCLEdBQVEsRUFBRSxJQUFZLEVBQUUsRUFBVTtJQUMxRCxHQUFHLENBQUMsYUFBYSxDQUFDLEVBQUUsRUFBRSxHQUFHLENBQUMsWUFBWSxDQUFDLElBQUksQ0FBQyxDQUFDLFFBQVEsRUFBRSxDQUFDLENBQUE7QUFDekQsQ0FBQztBQUZELDRCQUVDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBQUklWQVRFIFppcCBGb2xkZXJcbiAqL1xuZXhwb3J0IGZ1bmN0aW9uIHppcEZvbGRlcih6aXA6IGFueSwgZmZzOiBhbnksIHJvb3Q6IHN0cmluZywgZGlyOiBzdHJpbmcpIHtcblx0ZGlyID0gZGlyIHx8ICcnXG5cdGxldCBmaWxlcyA9IGZmcy5yZWFkZGlyU3luYyhyb290ICsgKGRpciA/ICcvJyArIGRpciA6ICcnKSlcblx0ZmlsZXMuZm9yRWFjaChmaWxlID0+IHtcblx0XHRpZiAoWycudHMnLCAnLmpzLm1hcCddLnNvbWUoZSA9PiBmaWxlLmVuZHNXaXRoKGUpKSkge1xuXHRcdFx0cmV0dXJuXG5cdFx0fVxuXHRcdGxldCBzdGF0ID0gZmZzLnN0YXRTeW5jKHJvb3QgKyAoZGlyID8gJy8nICsgZGlyIDogJycpICsgJy8nICsgZmlsZSlcblx0XHRpZiAoc3RhdC5pc0ZpbGUoKSkge1xuXHRcdFx0emlwRmlsZSh6aXAsIGZmcywgcm9vdCwgZGlyLCBmaWxlKVxuXHRcdH0gZWxzZSBpZiAoc3RhdC5pc0RpcmVjdG9yeSgpKSB7XG5cdFx0XHR6aXBGb2xkZXIoemlwLCBmZnMsIHJvb3QsIGRpciA/IGRpciArICcvJyArIGZpbGUgOiBmaWxlKVxuXHRcdH1cblx0fSlcbn1cblxuLyoqXG4gKiBQUklWQVRFIFppcCBGaWxlXG4gKi9cbmV4cG9ydCBmdW5jdGlvbiB6aXBGaWxlKFxuXHR6aXA6IGFueSxcblx0ZmZzOiBhbnksXG5cdHJvb3Q6IHN0cmluZyxcblx0ZGlyOiBzdHJpbmcsXG5cdGZpbGU6IHN0cmluZ1xuKSB7XG5cdGRpciA9IGRpciB8fCAnJ1xuXHRsZXQgemlwZm9sZGVyID0gZGlyID8gemlwLmZvbGRlcihkaXIpIDogemlwXG5cdGNvbnN0IGRhdGEgPSBmZnMucmVhZEZpbGVTeW5jKHJvb3QgKyAoZGlyID8gJy8nICsgZGlyIDogJycpICsgJy8nICsgZmlsZSlcblx0emlwZm9sZGVyLmZpbGUoZmlsZSwgZGF0YSlcbn1cblxuLyoqXG4gKiBQUklWQVRFIENoZWNrIEZvbGRlclxuICovXG5leHBvcnQgZnVuY3Rpb24gY2hlY2tGb2xkZXIoZmZzOiBhbnksIGZsZDogc3RyaW5nKSB7XG5cdGxldCBmbGRCaXRzID0gZmxkLnNwbGl0KCcvJyksXG5cdFx0bWtmbGQgPSAnJ1xuXHRmbGRCaXRzLmZvckVhY2godG9CaXQgPT4ge1xuXHRcdG1rZmxkID0gbWtmbGQgPyBta2ZsZCArICcvJyArIHRvQml0IDogdG9CaXRcblx0XHRpZiAobWtmbGQgJiYgIWZmcy5leGlzdHNTeW5jKG1rZmxkKSkge1xuXHRcdFx0ZmZzLm1rZGlyU3luYyhta2ZsZClcblx0XHR9XG5cdH0pXG59XG5cbi8qKlxuICogUFJJVkFURSBDb3B5IEZvbGRlclxuICovXG5leHBvcnQgZnVuY3Rpb24gY29weUZvbGRlcihmZnM6IGFueSwgZnJvbTogc3RyaW5nLCB0bzogc3RyaW5nKSB7XG5cdGNoZWNrRm9sZGVyKGZmcywgdG8pXG5cdGxldCB0YXNrcyA9IFtdXG5cdGZmcy5yZWFkZGlyU3luYyhmcm9tKS5mb3JFYWNoKGNoaWxkID0+IHtcblx0XHRpZiAoZmZzLnN0YXRTeW5jKGZyb20gKyAnLycgKyBjaGlsZCkuaXNEaXJlY3RvcnkoKSkge1xuXHRcdFx0Y29weUZvbGRlcihmZnMsIGZyb20gKyAnLycgKyBjaGlsZCwgdG8gKyAnLycgKyBjaGlsZClcblx0XHR9IGVsc2Uge1xuXHRcdFx0Y29weUZpbGUoZmZzLCBmcm9tICsgJy8nICsgY2hpbGQsIHRvICsgJy8nICsgY2hpbGQpXG5cdFx0fVxuXHR9KVxufVxuXG4vKipcbiAqIFBSSVZBVEUgQ09QWSBGaWxlXG4gKi9cbmV4cG9ydCBmdW5jdGlvbiBjb3B5RmlsZShmZnM6IGFueSwgZnJvbTogc3RyaW5nLCB0bzogc3RyaW5nKSB7XG5cdGZmcy53cml0ZUZpbGVTeW5jKHRvLCBmZnMucmVhZEZpbGVTeW5jKGZyb20pLnRvU3RyaW5nKCkpXG59XG4iXX0=</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Aug 13 2018 14:01:00 GMT+1000 (AEST)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+<script src="block-navigation.js"></script>
+</body>
+</html>

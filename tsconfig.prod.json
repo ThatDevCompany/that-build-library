@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "es5",
-		"outDir": "../dist",
+		"outDir": "dist",
 		"sourceMap": false,
 		"declaration": true,
 		"moduleResolution": "node",
@@ -12,7 +12,7 @@
 		]
 	},
 	"include": [
-		"."
+		"./src"
 	],
 	"exclude": [
 		"admin",

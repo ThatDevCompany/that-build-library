@@ -3,7 +3,10 @@ import * as fs from 'fs'
 /**
  * Build Utils
  */
-export async function processPackage(process?: (pkg: any) => any, autoUpdate: boolean = false) {
+export async function processPackage(
+	process?: (pkg: any) => any,
+	autoUpdate: boolean = false
+) {
 	return new Promise((resolve, reject) => {
 		try {
 			const pkg = JSON.parse(fs.readFileSync('package.json').toString())

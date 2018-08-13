@@ -20,7 +20,6 @@ node_modules/
 # App Files
 # --------------------
 dist/
-coverage/
 
 # --------------------
 # IntelliJ Files

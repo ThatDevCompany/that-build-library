@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import { processPackage } from './updatePackage'
+import { processPackage } from './processPackage'
 import { clean } from './clean'
 import { exec } from './exec'
 
@@ -11,19 +11,20 @@ export async function npmPublish(
 	processPackage: (pkg) => void = pkg => {}
 ) {
 	// Update the package.json
-	return (
-		processPackage((pkg: any) => {
-			// Process the contents
-			processPackage(pkg)
-			delete pkg.devDependencies
+	await processPackage((pkg: any) => {
+		// Process the contents
+		processPackage(pkg)
+		delete pkg.devDependencies
 
-			// Save package.json
-			fs.writeFileSync(fld + '/package.json', JSON.stringify(pkg, null, 4))
-		})
-			// Delete the tests
-			.then(() => clean(fld + '/*.spec.*'))
+		// Save package.json
+		fs.writeFileSync(fld + '/package.json', JSON.stringify(pkg, null, 4))
+	})
 
-			// Run the publish
-			.then(() => exec('npm', ['publish', 'dist']))
-	)
+	// Delete the tests
+	await clean(fld + '/*.spec.*')
+
+	// Run the publish
+	await exec('npm', ['publish', 'dist'])
+
+	return Promise.resolve()
 }

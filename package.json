@@ -14,7 +14,6 @@
         "lint": "babel-node admin/scripts/lint.js",
         "build": "babel-node admin/scripts/build.js",
         "test": "babel-node admin/scripts/test.js",
-        "cover": "babel-node admin/scripts/cover.js",
         "publish": "babel-node admin/scripts/publish.js"
     },
     "dependencies": {
