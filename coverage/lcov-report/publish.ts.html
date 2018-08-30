@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for exec.ts</title>
+    <title>Code coverage report for publish.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="index.html">All files</a> exec.ts
+      <a href="index.html">All files</a> publish.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">11.11% </span>
+        <span class="strong">41.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>2/18</span>
+        <span class='fraction'>5/12</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/10</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/5</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">11.11% </span>
+        <span class="strong">41.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>2/18</span>
+        <span class='fraction'>5/12</span>
       </div>
     </div>
     <p class="quiet">
@@ -82,9 +82,10 @@
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -94,71 +95,64 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { spawn } from 'child_process'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as fs from 'fs'
+import { processPackage } from './processPackage'
+import { clean } from './clean'
+import { exec } from './exec'
 &nbsp;
 /**
- * Execute a CMD line process
+ * NPM Publish
  */
-<span class="fstat-no" title="function not covered" >export async function exec(</span>
-	cmd: string,
-	args: Array&lt;string&gt; = <span class="branch-0 cbranch-no" title="branch not covered" >[],</span>
-	silent = <span class="branch-0 cbranch-no" title="branch not covered" >false</span>
+<span class="fstat-no" title="function not covered" >export async function publish(</span>
+	fld: string,
+	process: (pkg) =&gt; void = <span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >pkg</span> =&gt; {},</span>
+	packageManager: string = <span class="branch-0 cbranch-no" title="branch not covered" >'yarn'</span>
 ) {
-	const response = <span class="cstat-no" title="statement not covered" >[]</span>
-<span class="cstat-no" title="statement not covered" >	return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
-		const exe = <span class="cstat-no" title="statement not covered" >spawn(cmd, args, {</span>
-			env: process.env
-		})
-<span class="cstat-no" title="statement not covered" >		exe.stdout.on('data', <span class="fstat-no" title="function not covered" >data</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >			response.push(data.toString())</span>
-<span class="cstat-no" title="statement not covered" >			if (!silent) {</span>
-<span class="cstat-no" title="statement not covered" >				console.log(data.toString())</span>
-			}
-		})
-<span class="cstat-no" title="statement not covered" >		exe.stderr.on('data', <span class="fstat-no" title="function not covered" >data</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >			if (!silent) {</span>
-<span class="cstat-no" title="statement not covered" >				console.error(data.toString())</span>
-			}
-		})
-<span class="cstat-no" title="statement not covered" >		exe.on('exit', <span class="fstat-no" title="function not covered" >code</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >			if (code === 0) {</span>
-<span class="cstat-no" title="statement not covered" >				return resolve(response)</span>
-			} else {
-<span class="cstat-no" title="statement not covered" >				if (!silent) {</span>
-<span class="cstat-no" title="statement not covered" >					console.error('Problem executing ' + cmd)</span>
-				}
-<span class="cstat-no" title="statement not covered" >				return reject()</span>
-			}
-		})
-	})
+	// Update the package.json
+	let newPkg: any = <span class="cstat-no" title="statement not covered" >await processPackage(<span class="fstat-no" title="function not covered" >(p</span>kg: any) =&gt; {</span>
+		// Process the contents
+<span class="cstat-no" title="statement not covered" >		process(pkg)</span>
+<span class="cstat-no" title="statement not covered" >		delete pkg.devDependencies</span>
+&nbsp;
+		// Save package.json
+<span class="cstat-no" title="statement not covered" >		fs.writeFileSync(fld + '/package.json', JSON.stringify(pkg, null, 4))</span>
+	}, true)
+&nbsp;
+	// Delete the tests
+<span class="cstat-no" title="statement not covered" >	await clean(fld + '/*.spec.*')</span>
+&nbsp;
+	// Run the publish
+<span class="cstat-no" title="statement not covered" >	await exec(packageManager, [</span>
+		'publish',
+		'--new-version',
+		newPkg.version,
+		'dist'
+	])
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	return Promise.resolve()</span>
 }
 &nbsp;</pre></td></tr>
 </table></pre>

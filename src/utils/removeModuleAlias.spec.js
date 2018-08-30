@@ -1,9 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const removeModuleAlias_1 = require("./removeModuleAlias");
+'use strict'
+Object.defineProperty(exports, '__esModule', { value: true })
+const removeModuleAlias_1 = require('./removeModuleAlias')
 describe('removeModuleAlias', () => {
-    it('should be a function', () => {
-        expect(typeof removeModuleAlias_1.removeModuleAlias).toEqual('function');
-    });
-});
+	it('should be a function', () => {
+		expect(typeof removeModuleAlias_1.removeModuleAlias).toEqual('function')
+	})
+})
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVtb3ZlTW9kdWxlQWxpYXMuc3BlYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInJlbW92ZU1vZHVsZUFsaWFzLnNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwyREFBdUQ7QUFFdkQsUUFBUSxDQUFDLG1CQUFtQixFQUFFLEdBQUcsRUFBRTtJQUNsQyxFQUFFLENBQUMsc0JBQXNCLEVBQUUsR0FBRyxFQUFFO1FBQy9CLE1BQU0sQ0FBQyxPQUFPLHFDQUFpQixDQUFDLENBQUMsT0FBTyxDQUFDLFVBQVUsQ0FBQyxDQUFBO0lBQ3JELENBQUMsQ0FBQyxDQUFBO0FBQ0gsQ0FBQyxDQUFDLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyByZW1vdmVNb2R1bGVBbGlhcyB9IGZyb20gJy4vcmVtb3ZlTW9kdWxlQWxpYXMnXG5cbmRlc2NyaWJlKCdyZW1vdmVNb2R1bGVBbGlhcycsICgpID0+IHtcblx0aXQoJ3Nob3VsZCBiZSBhIGZ1bmN0aW9uJywgKCkgPT4ge1xuXHRcdGV4cGVjdCh0eXBlb2YgcmVtb3ZlTW9kdWxlQWxpYXMpLnRvRXF1YWwoJ2Z1bmN0aW9uJylcblx0fSlcbn0pXG4iXX0=

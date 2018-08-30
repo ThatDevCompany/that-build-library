@@ -5,6 +5,9 @@ export default Promise.resolve()
 	.then(() => BuildUtils.tsc('tsconfig.json'))
 
 	.then(() => BuildUtils.echo('RUNNING TESTS'))
-	.then(() => BuildUtils.test(10, 'src', ['src/index.js']))
+	.then(() => BuildUtils.testJS(10, 'src', ['src/index.js']))
 
-	.catch(console.error)
+	.catch(e => {
+		console.error(e)
+		process.exit(1)
+	})

@@ -6,12 +6,13 @@ import { exec } from './exec'
 /**
  * NPM Publish
  */
-export async function npmPublish(
+export async function publish(
 	fld: string,
-	process: (pkg) => void = pkg => {}
+	process: (pkg) => void = pkg => {},
+	packageManager: string = 'yarn'
 ) {
 	// Update the package.json
-	await processPackage((pkg: any) => {
+	let newPkg: any = await processPackage((pkg: any) => {
 		// Process the contents
 		process(pkg)
 		delete pkg.devDependencies
@@ -24,7 +25,12 @@ export async function npmPublish(
 	await clean(fld + '/*.spec.*')
 
 	// Run the publish
-	await exec('npm', ['publish', 'dist'])
+	await exec(packageManager, [
+		'publish',
+		'--new-version',
+		newPkg.version,
+		'dist'
+	])
 
 	return Promise.resolve()
 }

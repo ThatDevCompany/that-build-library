@@ -1,7 +1,13 @@
-import { test } from './test'
+import { testJS, testTS } from './test'
 
-describe('test', () => {
+describe('testJS', () => {
 	it('should be a function', () => {
-		expect(typeof test).toEqual('function')
+		expect(typeof testJS).toEqual('function')
+	})
+})
+
+describe('testTS', () => {
+	it('should be a function', () => {
+		expect(typeof testTS).toEqual('function')
 	})
 })

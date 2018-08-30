@@ -7,9 +7,9 @@ export default Promise.resolve()
 	.then(() => Lint)
 	.then(() => Test)
 	.then(() => Build)
-	.then(() => BuildUtils.echo('PUBLISHING TO NPM'))
+	.then(() => BuildUtils.echo('PUBLISHING'))
 	.then(() =>
-		BuildUtils.npmPublish('dist', pkg => {
+		BuildUtils.publish('dist', pkg => {
 			delete pkg.scripts
 		})
 	)
