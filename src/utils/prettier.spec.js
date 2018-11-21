@@ -1,14 +1,14 @@
-'use strict'
-Object.defineProperty(exports, '__esModule', { value: true })
-const prettier_1 = require('./prettier')
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const prettier_1 = require("./prettier");
 describe('prettierJS', () => {
-	it('should be a function', () => {
-		expect(typeof prettier_1.prettierJS).toEqual('function')
-	})
-})
+    it('should be a function', () => {
+        expect(typeof prettier_1.prettierJS).toEqual('function');
+    });
+});
 describe('prettierTS', () => {
-	it('should be a function', () => {
-		expect(typeof prettier_1.prettierTS).toEqual('function')
-	})
-})
+    it('should be a function', () => {
+        expect(typeof prettier_1.prettierTS).toEqual('function');
+    });
+});
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJldHRpZXIuc3BlYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInByZXR0aWVyLnNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSx5Q0FBbUQ7QUFFbkQsUUFBUSxDQUFDLFlBQVksRUFBRSxHQUFHLEVBQUU7SUFDM0IsRUFBRSxDQUFDLHNCQUFzQixFQUFFLEdBQUcsRUFBRTtRQUMvQixNQUFNLENBQUMsT0FBTyxxQkFBVSxDQUFDLENBQUMsT0FBTyxDQUFDLFVBQVUsQ0FBQyxDQUFBO0lBQzlDLENBQUMsQ0FBQyxDQUFBO0FBQ0gsQ0FBQyxDQUFDLENBQUE7QUFFRixRQUFRLENBQUMsWUFBWSxFQUFFLEdBQUcsRUFBRTtJQUMzQixFQUFFLENBQUMsc0JBQXNCLEVBQUUsR0FBRyxFQUFFO1FBQy9CLE1BQU0sQ0FBQyxPQUFPLHFCQUFVLENBQUMsQ0FBQyxPQUFPLENBQUMsVUFBVSxDQUFDLENBQUE7SUFDOUMsQ0FBQyxDQUFDLENBQUE7QUFDSCxDQUFDLENBQUMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHByZXR0aWVySlMsIHByZXR0aWVyVFMgfSBmcm9tICcuL3ByZXR0aWVyJ1xuXG5kZXNjcmliZSgncHJldHRpZXJKUycsICgpID0+IHtcblx0aXQoJ3Nob3VsZCBiZSBhIGZ1bmN0aW9uJywgKCkgPT4ge1xuXHRcdGV4cGVjdCh0eXBlb2YgcHJldHRpZXJKUykudG9FcXVhbCgnZnVuY3Rpb24nKVxuXHR9KVxufSlcblxuZGVzY3JpYmUoJ3ByZXR0aWVyVFMnLCAoKSA9PiB7XG5cdGl0KCdzaG91bGQgYmUgYSBmdW5jdGlvbicsICgpID0+IHtcblx0XHRleHBlY3QodHlwZW9mIHByZXR0aWVyVFMpLnRvRXF1YWwoJ2Z1bmN0aW9uJylcblx0fSlcbn0pXG4iXX0=

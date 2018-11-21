@@ -66,5 +66,5 @@ export function copyFolder(ffs: any, from: string, to: string) {
  * PRIVATE COPY File
  */
 export function copyFile(ffs: any, from: string, to: string) {
-	ffs.writeFileSync(to, ffs.readFileSync(from).toString())
+	ffs.copyFileSync(from, to)
 }

@@ -1,7 +1,7 @@
 {
     "name": "that-build-library",
     "description": "A collection of common scripts for the build and deploy process",
-    "version": "0.1.31",
+    "version": "0.2.1",
     "license": "MIT",
     "repository": {
         "type": "git",
