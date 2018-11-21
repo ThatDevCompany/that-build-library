@@ -1,6 +1,5 @@
 # That Build Library
-
-[Code Coverage Report](https://htmlpreview.github.io/?https://github.com/ThatDevCompany/that-build-library/blob/master/coverage/index.html)
+[![CircleCI](https://circleci.com/gh/ThatDevCompany/that-build-library.svg?style=svg)](https://circleci.com/gh/ThatDevCompany/that-build-library)
 
 ##  Overview
 At That Dev Company we create and manage a whole bunch of projects
