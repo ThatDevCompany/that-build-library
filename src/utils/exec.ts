@@ -11,7 +11,8 @@ export async function exec(
 	const response = []
 	return new Promise((resolve, reject) => {
 		const exe = spawn(cmd, args, {
-			env: process.env
+			env: process.env,
+			shell: true,
 		})
 		exe.stdout.on('data', data => {
 			response.push(data.toString())
